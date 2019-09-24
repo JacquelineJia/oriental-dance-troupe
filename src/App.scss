@@ -1,0 +1,12 @@
+@import "./styles/_colors";
+
+.app {
+  color: $dark-gray;
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  justify-content: space-between;
+  line-height: 24px;
+  text-align: left;
+}

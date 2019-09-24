@@ -1,0 +1,13 @@
+$purple-blue: #3F51C1;
+$black: #000000;
+$dark-gray: #333333;
+$medium-gray: #565656;
+$gray: #979797;
+$light-gray: #BBBBBB;
+$off-white: #F2F2F2;
+$snow: #F9F9F9;
+$white: #FFFFFF;
+
+$primary-color: $purple-blue;
+$primary-color-light: lighten($primary-color, 10%);
+$primary-color-dark: darken($primary-color, 10%);
