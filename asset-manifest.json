@@ -1,15 +1,15 @@
 {
-  "main.css": "/static/css/main.ba940bd1.chunk.css",
-  "main.js": "/static/js/main.c936d944.chunk.js",
-  "main.js.map": "/static/js/main.c936d944.chunk.js.map",
-  "static/js/1.279a8a9e.chunk.js": "/static/js/1.279a8a9e.chunk.js",
-  "static/js/1.279a8a9e.chunk.js.map": "/static/js/1.279a8a9e.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/css/main.ba940bd1.chunk.css.map": "/static/css/main.ba940bd1.chunk.css.map",
-  "static/media/HeaderImage.module.scss": "/static/media/home-page-img.4a79d146.jpg",
-  "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
-  "index.html": "/index.html",
-  "precache-manifest.ef599136ecbe92817d8fdc203510091a.js": "/precache-manifest.ef599136ecbe92817d8fdc203510091a.js",
-  "service-worker.js": "/service-worker.js"
+  "main.css": "/oriental-dance-troupe/static/css/main.af715cd7.chunk.css",
+  "main.js": "/oriental-dance-troupe/static/js/main.49c994e7.chunk.js",
+  "main.js.map": "/oriental-dance-troupe/static/js/main.49c994e7.chunk.js.map",
+  "static/js/1.279a8a9e.chunk.js": "/oriental-dance-troupe/static/js/1.279a8a9e.chunk.js",
+  "static/js/1.279a8a9e.chunk.js.map": "/oriental-dance-troupe/static/js/1.279a8a9e.chunk.js.map",
+  "runtime~main.js": "/oriental-dance-troupe/static/js/runtime~main.cac300d9.js",
+  "runtime~main.js.map": "/oriental-dance-troupe/static/js/runtime~main.cac300d9.js.map",
+  "static/css/main.af715cd7.chunk.css.map": "/oriental-dance-troupe/static/css/main.af715cd7.chunk.css.map",
+  "static/media/HeaderImage.module.scss": "/oriental-dance-troupe/static/media/home-page-img.4a79d146.jpg",
+  "static/media/logo.svg": "/oriental-dance-troupe/static/media/logo.5d5d9eef.svg",
+  "index.html": "/oriental-dance-troupe/index.html",
+  "precache-manifest.eea9e6c1fabaf54f52d987668b807c4a.js": "/oriental-dance-troupe/precache-manifest.eea9e6c1fabaf54f52d987668b807c4a.js",
+  "service-worker.js": "/oriental-dance-troupe/service-worker.js"
 }
