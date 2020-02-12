@@ -1,55 +1,71 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import './NavigationBar.scss';
+import { Link, withRouter } from "react-router-dom";
 
-class NavigationBar extends Component {
+import style from './NavigationBar.module.scss';
+
+class NavigationBar extends React.Component {
+  isOpen = path => this.props.location.pathname === path;
+
   render() {
     return (
-      <div className="navBar">
-        <div className="menu">
-          <div className="header">
-            <FormattedMessage
-              id="components.navigationBar.menu.title"
-              defaultMessage="Oriental Dance Troupe of Ottawa"
-            />
+      <div className={`${style.navBar} appPaddingWrapper`}>
+        <div className={`${style.body} appContentWidth`}>
+          <div>
+            <div className={style.menu}>
+              <div className={style.header}>
+                <Link to="/">
+                  <FormattedMessage
+                    id="components.navigationBar.menu.title"
+                    defaultMessage="Oriental Dance Troupe of Ottawa"
+                  />
+                </Link>
+              </div>
+              {/* <span 
+                className={
+                  this.isOpen('/about') ? style.pageOpen : null
+                }
+              >
+                <Link to="/about">
+                  <FormattedMessage
+                    id="components.navigationBar.menu.about"
+                    defaultMessage="About"
+                  />
+                </Link>
+              </span> */}
+            </div>
+            {/* <span>
+              <FormattedMessage
+                id="components.navigationBar.menu.programs"
+                defaultMessage="Programs"
+              />
+            </span>
+            <span>
+              <FormattedMessage
+                id="components.navigationBar.menu.contact"
+                defaultMessage="Contact"
+              />
+            </span>
+            <span>
+              <FormattedMessage
+                id="components.navigationBar.menu.gallery"
+                defaultMessage="Gallery"
+              />
+            </span> */}
           </div>
-          {/* <span>
-            <FormattedMessage
-              id="components.navigationBar.menu.programs"
-              defaultMessage="Programs"
-            />
-          </span>
-          <span>
-            <FormattedMessage
-              id="components.navigationBar.menu.faculty"
-              defaultMessage="Faculty"
-            />
-          </span>
-          <span>
-            <FormattedMessage
-              id="components.navigationBar.menu.contact"
-              defaultMessage="Contact"
-            />
-          </span>
-          <span>
-            <FormattedMessage
-              id="components.navigationBar.menu.gallery"
-              defaultMessage="Gallery"
-            />
-          </span> */}
+          <button 
+              className={style.languageButton}
+              onClick={() => this.props.onChangeLanguage()}
+            >
+              <FormattedMessage
+                id="languageChange"
+                defaultMessage="English/中文"
+              />
+            </button>
         </div>
-        <button 
-            className="languageButton"
-            onClick={() => this.props.onChangeLanguage()}
-          >
-            <FormattedMessage
-              id="languageChange"
-              defaultMessage="English/中文"
-            />
-          </button>
       </div>
     );
   }
 }
 
-export default NavigationBar;
+export default withRouter(NavigationBar);

@@ -1,11 +1,15 @@
 import React from 'react';
+import { Helmet } from "react-helmet";
 import { IntlProvider } from 'react-intl';
+import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
 
-import messages from './translations/messages';
+import About from './components/About';
 import Footer from './components/Footer';
-import Homepage from './components/Homepage';
+import HeaderImage from './components/HeaderImage';
+import Home from './components/Home';
 import NavigationBar from './components/NavigationBar';
 import logo from './logo.svg';
+import messages from './translations/messages';
 import './App.scss';
 
 let locale = (navigator.languages && navigator.languages[0])
@@ -15,11 +19,6 @@ let locale = (navigator.languages && navigator.languages[0])
 
 if (locale.startsWith('zh')) locale = 'zh';
 else locale = 'en';
-
-let i18nConfig = {
-  locale: locale,
-  messages: messages[locale]
-};
 
 class App extends React.Component {
   state = {
@@ -50,9 +49,26 @@ class App extends React.Component {
     return (
       <IntlProvider {...i18nConfig}>
         <div className="app">
-          <NavigationBar onChangeLanguage={this.onChangeLanguage} />
-          <Homepage />
-          <Footer />
+          <Helmet>
+            <title>Oriental Dance Troupe of Ottawa</title>
+            <meta name="keywords" content="ottawa,oriental,dance,troupe,chinese,traditional,classical,odto,dongfangwudaotuan,渥太华东方舞蹈团,渥太华,东方舞蹈团"/>
+            <meta name="description" content="Established in 1988, Oriental Dance Troupe of Ottawa has the longest performing history of Chinese dance in national capital region."/>
+            <meta name="subject" content="Oriental Dance Troupe of Ottawa"/>
+            <meta name="copyright"content="Oriental Dance Troupe of Ottawa"/>
+            <meta name="language" content="EN"/>
+          </Helmet>
+          <Router>
+            <NavigationBar onChangeLanguage={this.onChangeLanguage} />
+            <HeaderImage />
+            <div className="appPaddingWrapper pageContent">
+              <Switch>
+                <Route exact path="/" component={About} />
+                {/* <Route path="/about" component={About} /> */}
+                <Redirect to="/" />
+              </Switch>
+            </div>
+            <Footer />
+          </Router>
         </div>
       </IntlProvider>
     );

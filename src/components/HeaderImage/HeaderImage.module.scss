@@ -1,0 +1,9 @@
+@import "../../styles/_colors";
+
+.pageImage {
+  background: url("../../images/home-page-img.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 550px;
+}
