@@ -5,9 +5,12 @@ import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-d
 
 import About from './components/About';
 import Footer from './components/Footer';
+import Gallery from './components/Gallery';
 import HeaderImage from './components/HeaderImage';
 import Home from './components/Home';
 import NavigationBar from './components/NavigationBar';
+import Programs from './components/Programs';
+import Team from './components/Team';
 import logo from './logo.svg';
 import messages from './translations/messages';
 import './App.scss';
@@ -63,7 +66,9 @@ class App extends React.Component {
             <div className="appPaddingWrapper pageContent">
               <Switch>
                 <Route exact path="/" component={About} />
-                {/* <Route path="/about" component={About} /> */}
+                <Route path="/gallery" component={Gallery} />
+                <Route path="/programs" component={Programs} />
+                <Route path="/team" component={Team} />
                 <Redirect to="/" />
               </Switch>
             </div>

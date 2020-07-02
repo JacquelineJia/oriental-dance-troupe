@@ -21,39 +21,45 @@ class NavigationBar extends React.Component {
                   />
                 </Link>
               </div>
-              {/* <span 
-                className={
-                  this.isOpen('/about') ? style.pageOpen : null
-                }
-              >
-                <Link to="/about">
-                  <FormattedMessage
-                    id="components.navigationBar.menu.about"
-                    defaultMessage="About"
-                  />
-                </Link>
-              </span> */}
+                <span
+                  className={
+                    this.isOpen('/programs') ? style.pageOpen : null
+                  }
+                >
+                  <Link to="/programs">
+                    <FormattedMessage
+                      id="components.navigationBar.menu.programs"
+                      defaultMessage="Programs"
+                    />
+                  </Link>
+                </span>
+                <span
+                  className={
+                    this.isOpen('/team') ? style.pageOpen : null
+                  }
+                >
+                  <Link to="/team">
+                    <FormattedMessage
+                      id="components.navigationBar.menu.team"
+                      defaultMessage="Out Team"
+                    />
+                  </Link>
+                </span>
+                <span
+                  className={
+                    this.isOpen('/gallery') ? style.pageOpen : null
+                  }
+                >
+                  <Link to="/gallery">
+                    <FormattedMessage
+                      id="components.navigationBar.menu.gallery"
+                      defaultMessage="Gallery"
+                    />
+                  </Link>
+                </span>
             </div>
-            {/* <span>
-              <FormattedMessage
-                id="components.navigationBar.menu.programs"
-                defaultMessage="Programs"
-              />
-            </span>
-            <span>
-              <FormattedMessage
-                id="components.navigationBar.menu.contact"
-                defaultMessage="Contact"
-              />
-            </span>
-            <span>
-              <FormattedMessage
-                id="components.navigationBar.menu.gallery"
-                defaultMessage="Gallery"
-              />
-            </span> */}
           </div>
-          <button 
+          <button
               className={style.languageButton}
               onClick={() => this.props.onChangeLanguage()}
             >

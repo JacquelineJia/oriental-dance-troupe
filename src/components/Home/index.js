@@ -6,13 +6,13 @@ class Home extends Component {
   render() {
     return (
       <div className={`${style.pageContent} appContentWidth`}>
-        <span className={style.aboutUsTitle}>
-          <FormattedMessage
-            id="components.home.title.aboutUs"
-            defaultMessage="About us"
-          />
-        </span>
-        <span className={style.aboutUsContent}>
+        {/* <span className={style.title}>
+           <FormattedMessage
+             id="components.home.title.aboutUs"
+             defaultMessage="About us"
+           />
+         </span>*/ }
+        <span className={style.content}>
           <FormattedMessage
             id="components.home.content.aboutUs"
             defaultMessage="Established in 1988, Oriental Dance Troupe of Ottawa has the longest performing history of Chinese dance in national capital region."
