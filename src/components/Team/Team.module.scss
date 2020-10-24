@@ -25,7 +25,7 @@
   }
 
   .memberCard {
-    background-color: fade-out($primary-color-light, 0.9);
+    background-color: $primary-color-fadded;
     border-radius: 10px;
     display: flex;
     flex-direction: row;

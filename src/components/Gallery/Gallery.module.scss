@@ -12,6 +12,35 @@
     padding-bottom: 1em;
   }
 
-  .content {
+  .videoGroup {
+    background-color: $primary-color-fadded;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 1em;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
   }
+}
+
+.videoContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 150px;
+  overflow: hidden;
+  margin: 1em;
+  position: relative;
+  @media (max-width: 767px) {
+    height: 240px;
+  }
+}
+
+.videoContainer iframe {
+  border-radius: 10px;
+  border-width: 0px;
+  flex: 1 1 auto;
 }

@@ -3,7 +3,7 @@
 .navBar {
   background-color: transparent;
   box-sizing: border-box;
-  color: $gray;
+  color: $light-gray;
   font-size: 18px;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -42,7 +42,7 @@
     color: inherit;
   }
   span {
-    color: $gray;
+    color: $white-fadded;
     cursor: pointer;
     margin-right: 30px;
     white-space: nowrap;
@@ -70,6 +70,6 @@
   padding-right: 0.9em;
   // width: 65px;
   &:hover {
-    background-color: $off-white;
+    background-color: $white-slightly-fadded;
   }
 }

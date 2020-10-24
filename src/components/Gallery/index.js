@@ -12,23 +12,38 @@ class Gallery extends Component {
             defaultMessage="Gallery"
           />
         </span>
-        <span className={style.content}>
+        <span className={style.videoGroup}>
+          <span className={style.videoContainer}>
+            <iframe
+              src="https://www.youtube.com/embed/CqV3vmUUdno"
+              allowfullscreen="allowfullscreen"
+            >
+            </iframe>
+          </span>
+          <span className={style.videoContainer}>
+            <iframe
+              src="https://www.youtube.com/embed/MZ8exzP0Fwo"
+              allowfullscreen="allowfullscreen"
+            >
+            </iframe>
+          </span>
+          <span className={style.videoContainer}>
+            <iframe
+              src="https://www.youtube.com/embed/ONrJVQcSHks"
+              allowfullscreen="allowfullscreen"
+            >
+            </iframe>
+          </span>
+        </span>
+        <span>
           <FormattedMessage
             id="components.gallery.content"
-            defaultMessage="Comming soon"
+            defaultMessage="More comming soon"
             values={{
               br: <span><br /><br /></span>,
             }}
           />
         </span>
-        {/* <span className={style.ourTeamTitle}>
-          <FormattedMessage
-            id="components.about.title.ourTeam"
-            defaultMessage="Our Troupe"
-          />
-        </span>
-        <span className={style.ourTeamContent}>
-        </span> */}
       </div>
     );
   }
