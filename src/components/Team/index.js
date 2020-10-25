@@ -29,7 +29,7 @@ class Team extends Component {
                   />
                 </span>
               </span>
-              <div className={style.imageTaoDing}/>
+              <div className={`${style.image} ${style.imageTaoDing}`}/>
             </span>
             <span className={style.description}>
               <FormattedMessage
@@ -42,30 +42,77 @@ class Team extends Component {
             </span>
           </span>
           <span className={style.memberCard}>
-            <span className={style.name}>
-              <FormattedMessage
-                id="components.about.content.ourTeam.artisticDirector.name"
-                defaultMessage="Junwei Bao"
-              />
+            <span className={style.column}>
+              <span className={style.column}>
+                <span className={style.name}>
+                  <FormattedMessage
+                    id="components.about.content.ourTeam.artisticDirector.name"
+                    defaultMessage="Junwei Bao"
+                  />
+                </span>
+                <span className={style.role}>
+                  <FormattedMessage
+                    id="components.about.content.ourTeam.artisticDirector"
+                    defaultMessage="Artistic Director"
+                  />
+                </span>
+              </span>
+              <div className={`${style.image}`}/>
             </span>
-            <span className={style.role}>
+          </span>
+          <span className={style.memberCard}>
+            <span className={style.column}>
+              <span className={style.column}>
+                <span className={style.name}>
+                  <FormattedMessage
+                    id="components.about.content.ourTeam.instructor.1.name"
+                    defaultMessage="Diana Ding"
+                  />
+                </span>
+                <span className={style.role}>
+                  <FormattedMessage
+                    id="components.about.content.ourTeam.instructor"
+                    defaultMessage="Instructor"
+                  />
+                </span>
+              </span>
+              <div className={`${style.image}`}/>
+            </span>
+            <span className={style.description}>
               <FormattedMessage
-                id="components.about.content.ourTeam.artisticDirector"
-                defaultMessage="Artistic Director"
+                id="components.about.content.ourTeam.instructor.1.about"
+                defaultMessage=""
+                values={{
+                  linebreak: <br />
+                }}
               />
             </span>
           </span>
           <span className={style.memberCard}>
-            <span className={style.name}>
-              <FormattedMessage
-                id="components.about.content.ourTeam.instructor.name.1"
-                defaultMessage="Diana Ding"
-              />
+            <span className={style.column}>
+              <span className={style.column}>
+                <span className={style.name}>
+                  <FormattedMessage
+                    id="components.about.content.ourTeam.instructor.2.name"
+                    defaultMessage="Ping Feng"
+                  />
+                </span>
+                <span className={style.role}>
+                  <FormattedMessage
+                    id="components.about.content.ourTeam.instructor.2"
+                    defaultMessage="Guest Ballet instructor"
+                  />
+                </span>
+              </span>
+              <div className={`${style.image}`}/>
             </span>
-            <span className={style.role}>
+            <span className={style.description}>
               <FormattedMessage
-                id="components.about.content.ourTeam.instructor"
-                defaultMessage="Instructor"
+                id="components.about.content.ourTeam.instructor.2.about"
+                defaultMessage=""
+                values={{
+                  linebreak: <br />
+                }}
               />
             </span>
           </span>

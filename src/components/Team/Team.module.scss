@@ -35,18 +35,31 @@
     padding-left: 2em;
     padding-right: 2em;
     padding-top: 2em;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
 
     .name {
       align-self: baseline;
       font-size: 24px;
       margin-bottom: 0.5em;
+      margin-right: 1em;
     }
 
     .role {
       align-self: baseline;
       font-size: 20px;
       margin-bottom: 0.5em;
-      margin-left: 1em;
+    }
+
+    .image {
+      align-self: center;
+      border-radius: 5px;
+      flex: 0 0;
+      margin-top: 1em;
+      margin-right: 1em;
+      min-width: 250px;
+      width: 250px;
     }
 
     .imageTaoDing {
@@ -54,19 +67,21 @@
       background-repeat: no-repeat;
       background-position: 50% 50%;
       background-size: cover;
-      border-radius: 5px;
-      flex: 0 0;
       height: 250px;
-      margin-top: 1em;
       min-height: 250px;
-      min-width: 250px;
-      width: 250px;
+      @media (max-width: 767px) {
+        margin-bottom: 2em;
+      }
     }
 
     .description {
       align-self: center;
       flex: 1 1;
-      margin-left: 2em;
+      margin-left: 1em;
+      margin-top: 0;
+      @media (max-width: 767px) {
+        margin-left: 0;
+      }
     }
   }
 
