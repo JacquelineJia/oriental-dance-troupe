@@ -13,6 +13,15 @@ class Gallery extends Component {
           />
         </span>
         <span className={style.videoGroup}>
+          <span className={`${style.videoContainer} ${style.singleVideo}`}>
+            <iframe
+              src="https://www.youtube.com/embed/rP5xkDrV3P4"
+              allowfullscreen="allowfullscreen"
+            >
+            </iframe>
+          </span>
+        </span>
+        <span className={style.videoGroup}>
           <span className={style.videoContainer}>
             <iframe
               src="https://www.youtube.com/embed/CqV3vmUUdno"
@@ -35,14 +44,37 @@ class Gallery extends Component {
             </iframe>
           </span>
         </span>
-        <span>
-          <FormattedMessage
-            id="components.gallery.content"
-            defaultMessage="More comming soon"
-            values={{
-              br: <span><br /><br /></span>,
-            }}
-          />
+        <span className={style.videoGroup}>
+          <span className={style.videoContainer}>
+            <iframe
+              src="https://www.youtube.com/embed/Upzn4k2B2PA"
+              allowfullscreen="allowfullscreen"
+            >
+            </iframe>
+          </span>
+          <span className={style.videoContainer}>
+            <iframe
+              src="https://www.youtube.com/embed/VShgl5axPQY"
+              allowfullscreen="allowfullscreen"
+            >
+            </iframe>
+          </span>
+          <span className={style.videoContainer}>
+            <iframe
+              src="https://www.youtube.com/embed/ZpWVSuJS6hI"
+              allowfullscreen="allowfullscreen"
+            >
+            </iframe>
+          </span>
+        </span>
+        <span className={style.videoGroup}>
+          <span className={`${style.videoContainer} ${style.singleVideo}`}>
+            <iframe
+              src="https://www.youtube.com/embed/tNi7YxK_vw4"
+              allowfullscreen="allowfullscreen"
+            >
+            </iframe>
+          </span>
         </span>
       </div>
     );

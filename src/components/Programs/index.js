@@ -15,7 +15,7 @@ class Programs extends Component {
         <span className={style.content}>
           <FormattedMessage
             id="components.programs.content"
-            defaultMessage=""
+            defaultMessage="We have adult and children programs. Contact us for schedules."
             values={{
               br: <span><br /><br /></span>,
             }}

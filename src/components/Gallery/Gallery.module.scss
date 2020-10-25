@@ -17,8 +17,8 @@
     border-radius: 10px;
     display: flex;
     flex-direction: row;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-bottom: 2.5em;
     padding: 1em;
     @media (max-width: 767px) {
       flex-direction: column;
@@ -43,4 +43,12 @@
   border-radius: 10px;
   border-width: 0px;
   flex: 1 1 auto;
+}
+
+.singleVideo {
+  height: 400px;
+  max-height: 80vh;
+  @media (max-width: 767px) {
+    height: 350px;
+  }
 }
