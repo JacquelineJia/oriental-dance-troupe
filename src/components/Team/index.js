@@ -15,7 +15,7 @@ class Team extends Component {
         <span className={style.ourTeamContent}>
           <span className={style.memberCard}>
             <span className={style.column}>
-              <span className={style.row}>
+              <span className={style.column}>
                 <span className={style.name}>
                   <FormattedMessage
                     id="components.about.content.ourTeam.director.name"
@@ -57,7 +57,16 @@ class Team extends Component {
                   />
                 </span>
               </span>
-              <div className={`${style.image}`}/>
+              <div className={`${style.image} ${style.imageBaoJunwei}`}/>
+            </span>
+            <span className={style.description}>
+              <FormattedMessage
+                id="components.about.content.ourTeam.artisticDirector.about"
+                defaultMessage=""
+                values={{
+                  linebreak: <br />
+                }}
+              />
             </span>
           </span>
           <span className={style.memberCard}>

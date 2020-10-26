@@ -16,45 +16,54 @@
 .body{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 1em;
 }
 
-.menu {
-  align-items: baseline;
+.header {
   display: flex;
-  flex-direction: row;
+  flex-grow: 1;
   flex-wrap: wrap;
-  // margin-bottom: 10px;
-  vertical-align: bottom;
-  .pageOpen {
-    color: $white;
-  }
-  .header {
+
+  .name {
     color: $white;
     cursor: pointer;
     font-size: 22px;
-    margin-right: 30px;
+    margin-bottom: 0.25em;
+    margin-right: 25px;
+    a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+    }
   }
-  a, a:hover, a:focus, a:active {
-    text-decoration: none;
-    color: inherit;
-  }
-  span {
-    color: $white-fadded;
-    cursor: pointer;
-    margin-right: 30px;
-    white-space: nowrap;
-    &:hover {
+
+  .menu {
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    vertical-align: bottom;
+    .pageOpen {
       color: $white;
     }
-    &:last-child {
-      margin-right: 0;
+    a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+    }
+    span {
+      color: $white-fadded;
+      cursor: pointer;
+      margin-right: 30px;
+      white-space: nowrap;
+      &:hover {
+        color: $white;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
-  // @media (max-width: 767px) {
-  // }
 }
 
 .languageButton {
@@ -64,11 +73,11 @@
   color: $purple-blue;
   cursor: pointer;
   font-size: 16px;
-  // margin-top: 1em;
+  margin-left: auto;
   max-height: 2em;
+  min-width: 65px;
   padding-left: 0.9em;
   padding-right: 0.9em;
-  // width: 65px;
   &:hover {
     background-color: $white-slightly-fadded;
   }
