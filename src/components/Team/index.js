@@ -57,7 +57,7 @@ class Team extends Component {
                   />
                 </span>
               </span>
-              <div className={`${style.image} ${style.imageBaoJunwei}`}/>
+              <div className={`${style.image} ${style.imageJunweiBao}`}/>
             </span>
             <span className={style.description}>
               <FormattedMessage
@@ -85,7 +85,7 @@ class Team extends Component {
                   />
                 </span>
               </span>
-              <div className={`${style.image}`}/>
+              <div className={`${style.image} ${style.imageDianaDing}`}/>
             </span>
             <span className={style.description}>
               <FormattedMessage
