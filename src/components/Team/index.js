@@ -46,34 +46,6 @@ class Team extends Component {
               <span className={style.column}>
                 <span className={style.name}>
                   <FormattedMessage
-                    id="components.about.content.ourTeam.artisticDirector.name"
-                    defaultMessage="Junwei Bao"
-                  />
-                </span>
-                <span className={style.role}>
-                  <FormattedMessage
-                    id="components.about.content.ourTeam.artisticDirector"
-                    defaultMessage="Artistic Director"
-                  />
-                </span>
-              </span>
-              <div className={`${style.image} ${style.imageJunweiBao}`}/>
-            </span>
-            <span className={style.description}>
-              <FormattedMessage
-                id="components.about.content.ourTeam.artisticDirector.about"
-                defaultMessage=""
-                values={{
-                  linebreak: <br />
-                }}
-              />
-            </span>
-          </span>
-          <span className={style.memberCard}>
-            <span className={style.column}>
-              <span className={style.column}>
-                <span className={style.name}>
-                  <FormattedMessage
                     id="components.about.content.ourTeam.instructor.1.name"
                     defaultMessage="Diana Ding"
                   />

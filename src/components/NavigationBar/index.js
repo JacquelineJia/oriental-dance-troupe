@@ -41,7 +41,7 @@ class NavigationBar extends React.Component {
                 <Link to="/team">
                   <FormattedMessage
                     id="components.navigationBar.menu.team"
-                    defaultMessage="Out Team"
+                    defaultMessage="Our Team"
                   />
                 </Link>
               </span>
