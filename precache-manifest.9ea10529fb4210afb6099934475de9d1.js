@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "0fc56699146edeb7365b",
-    "url": "/static/css/main.00da49d9.chunk.css"
+    "revision": "4bb5785b9ec7cf87dcf0",
+    "url": "/static/css/main.86e4332b.chunk.css"
   },
   {
-    "revision": "0fc56699146edeb7365b",
-    "url": "/static/js/main.0fc56699.chunk.js"
+    "revision": "4bb5785b9ec7cf87dcf0",
+    "url": "/static/js/main.4bb5785b.chunk.js"
   },
   {
     "revision": "3ab62a8dcb69726bb61f",
@@ -24,10 +24,6 @@ self.__precacheManifest = [
     "url": "/static/media/tao-ding.985ec374.jpg"
   },
   {
-    "revision": "3de8a0699a64c76eb77319956e25bc55",
-    "url": "/static/media/junwei-bao.3de8a069.jpg"
-  },
-  {
     "revision": "4a79d14642f2c305f3fd8ea473b70312",
     "url": "/static/media/home-page-img.4a79d146.jpg"
   },
@@ -36,7 +32,7 @@ self.__precacheManifest = [
     "url": "/static/media/logo.5d5d9eef.svg"
   },
   {
-    "revision": "3b119ea406ae977a4f66c0bbdbab154c",
+    "revision": "9798d3ea26b4e3eab82efc10e1e7abb0",
     "url": "/index.html"
   }
 ];
