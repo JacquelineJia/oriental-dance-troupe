@@ -5,7 +5,6 @@ import { Link, withRouter } from "react-router-dom";
 import style from './NavigationBar.module.scss';
 
 class NavigationBar extends React.Component {
-  isOpen = path => this.props.location.pathname === path;
 
   render() {
     return (
