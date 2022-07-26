@@ -28,7 +28,7 @@ class Programs extends Component {
             defaultMessage="For children programs, go to: {fengdance}"
             values={{
               br: <span><br /><br /></span>,
-              fengdance: <a href="fengdance.ca">Feng Dance</a>,
+              fengdance: <a href="https://fengdance.ca">Feng Dance</a>,
             }}
           />
         </span>
