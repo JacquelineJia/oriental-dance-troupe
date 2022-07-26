@@ -5,7 +5,6 @@ import { Link, withRouter } from "react-router-dom";
 import style from './NavigationBar.module.scss';
 
 class NavigationBar extends React.Component {
-
   render() {
     return (
       <div className={`${style.navBar} appPaddingWrapper`}>
