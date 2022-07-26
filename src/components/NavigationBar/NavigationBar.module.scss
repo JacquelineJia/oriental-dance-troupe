@@ -1,7 +1,9 @@
 @import "../../styles/_colors";
 
 .navBar {
-  background-color: transparent;
+  //background-color: transparent;
+  //background-color: $primary-color-fadded;
+  background: linear-gradient($primary-color 10%, transparent 100%);
   box-sizing: border-box;
   color: $light-gray;
   font-size: 18px;
@@ -23,6 +25,7 @@
   display: flex;
   flex-grow: 1;
   flex-wrap: wrap;
+  text-shadow: 0px 0px 5px $black;
 
   .name {
     color: $white;
@@ -52,7 +55,7 @@
       color: inherit;
     }
     span {
-      color: $white-fadded;
+      color: $white-fadded-2;
       cursor: pointer;
       margin-right: 30px;
       white-space: nowrap;
@@ -79,6 +82,6 @@
   padding-left: 0.9em;
   padding-right: 0.9em;
   &:hover {
-    background-color: $white-slightly-fadded;
+    background-color: $white-fadded-1;
   }
 }

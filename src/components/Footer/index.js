@@ -14,7 +14,11 @@ class Footer extends Component {
             />
           </span>
           <span>
-            dongfangwudaotuan@gmail.com
+            <a className={style.link} 
+              href="mailto:dongfangwudaotuan@gmail.com"
+              target="_blank">
+              dongfangwudaotuan@gmail.com
+            </a>
           </span>
           <span>
             (613) 864-6588

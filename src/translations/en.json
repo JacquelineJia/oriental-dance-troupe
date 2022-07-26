@@ -10,7 +10,7 @@
   "components.about.content.ourTeam.instructor.2.about": "资深芭蕾舞老师。封老师毕业于北京舞蹈学院芭蕾舞系，曾担任 Ottawa ballet 的独舞演员，在Les Ballet Jazz de Montreal, Theater Ballet 做过演员. 封平老师在渥太华各舞校执教近30年，有非常丰富的教学经验。",
   "components.about.content.ourTeam.instructor.2.name": "Ping Feng",
   "components.about.title": "About Us",
-  "components.footer.copyright": "© 2020 Oriental Dance Troupe of Ottawa",
+  "components.footer.copyright": "© 2022 Oriental Dance Troupe of Ottawa",
   "components.footer.title.contactUs": "Contact Us",
   "components.gallery.title": "Gallery",
   "components.home.content.aboutUs": "Established in 1988, Oriental Dance Troupe of Ottawa has the longest performing history of Chinese dance in national capital region.",
@@ -21,7 +21,8 @@
   "components.navigationBar.menu.team": "Our Team",
   "components.navigationBar.menu.title": "Oriental Dance Troupe of Ottawa",
   "components.programs.title": "Programs",
-  "components.programs.content": "We have adult and children programs. Contact us for schedules.",
+  "components.programs.children": "For children programs, go to: {fengdance}",
+  "components.programs.content": "We have adult programs. Contact us for schedules.",
   "components.team.title": "Our Team",
   "languageChange": "中文"
 }
