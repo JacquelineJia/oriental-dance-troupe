@@ -29,7 +29,8 @@ class App extends React.Component {
       key: locale,
       locale: locale,
       messages: messages[locale],
-    }
+    },
+    linkIndex: 1,
   }
 
   onChangeLanguage = lang => {
@@ -47,6 +48,10 @@ class App extends React.Component {
     this.setState({ i18nConfig });
   }
 
+  handleClick = linkIndex => {
+    this.setState({ linkIndex });
+  };
+
   render() {
     const { i18nConfig } = this.state;
     return (
@@ -61,16 +66,13 @@ class App extends React.Component {
             <meta name="language" content="EN"/>
           </Helmet>
           <Router>
-            <NavigationBar onChangeLanguage={this.onChangeLanguage} />
+            <NavigationBar onChangeLanguage={this.onChangeLanguage} handleClick={this.handleClick} linkIndex={this.state.linkIndex}/>
             <HeaderImage />
             <div className="appPaddingWrapper pageContent">
-              <Switch>
-                <Route exact path="/" component={About} />
-                <Route path="/gallery" component={Gallery} />
-                <Route path="/programs" component={Programs} />
-                <Route path="/team" component={Team} />
-                <Redirect to="/" />
-              </Switch>
+              {this.state.linkIndex === 1 && <About />}
+              {this.state.linkIndex === 2 && <Programs />}
+              {this.state.linkIndex === 3 && <Team />}
+              {this.state.linkIndex === 4 && <Gallery />}
             </div>
             <Footer />
           </Router>

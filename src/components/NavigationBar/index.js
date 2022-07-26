@@ -13,49 +13,39 @@ class NavigationBar extends React.Component {
         <div className={`${style.body} appContentWidth`}>
           <div className={style.header}>
             <div className={style.name}>
-              <Link to="/">
-                <FormattedMessage
-                  id="components.navigationBar.menu.title"
-                  defaultMessage="Oriental Dance Troupe of Ottawa"
-                />
-              </Link>
+              <span className={this.props.linkIndex === 1 ? style.pageOpen : null}>
+                <a onClick={() => this.props.handleClick(1)}>
+                  <FormattedMessage
+                    id="components.navigationBar.menu.title"
+                    defaultMessage="Oriental Dance Troupe of Ottawa"
+                  />
+                </a>
+              </span>
             </div>
             <div className={style.menu}>
-              <span
-                className={
-                  this.isOpen('/programs') ? style.pageOpen : null
-                }
-              >
-                <Link to="/programs">
+              <span className={this.props.linkIndex === 2 ? style.pageOpen : null}>
+                <a onClick={() => this.props.handleClick(2)}>
                   <FormattedMessage
                     id="components.navigationBar.menu.programs"
                     defaultMessage="Programs"
                   />
-                </Link>
+                </a>
               </span>
-              <span
-                className={
-                  this.isOpen('/team') ? style.pageOpen : null
-                }
-              >
-                <Link to="/team">
+              <span className={this.props.linkIndex === 3 ? style.pageOpen : null}>
+                <a onClick={() => this.props.handleClick(3)}>
                   <FormattedMessage
                     id="components.navigationBar.menu.team"
                     defaultMessage="Our Team"
                   />
-                </Link>
+                </a>
               </span>
-              <span
-                className={
-                  this.isOpen('/gallery') ? style.pageOpen : null
-                }
-              >
-                <Link to="/gallery">
+              <span className={this.props.linkIndex === 4 ? style.pageOpen : null}>
+                <a onClick={() => this.props.handleClick(4)}>
                   <FormattedMessage
                     id="components.navigationBar.menu.gallery"
                     defaultMessage="Gallery"
                   />
-                </Link>
+                </a>
               </span>
             </div>
           </div>
