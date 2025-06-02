@@ -22,7 +22,7 @@
   "components.navigationBar.menu.title": "渥太华东方舞蹈团",
   "components.programs.title": "课程介绍",
   "components.programs.children": "少儿舞蹈课程，请到 {fengdance} 查询",
-  "components.programs.content": "We have adult and children's programs. Contact us for schedules.",
+  "components.programs.content": "We have adults' and children's programs. Contact us for schedules.",
   "components.team.title": "舞蹈团组成",
   "languageChange": "English"
 }
