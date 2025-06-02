@@ -1,9 +1,9 @@
 {
   "main.css": "/static/css/main.d3ff8ae4.chunk.css",
-  "main.js": "/static/js/main.c71eb6b4.chunk.js",
-  "main.js.map": "/static/js/main.c71eb6b4.chunk.js.map",
-  "static/js/1.62a1fcfd.chunk.js": "/static/js/1.62a1fcfd.chunk.js",
-  "static/js/1.62a1fcfd.chunk.js.map": "/static/js/1.62a1fcfd.chunk.js.map",
+  "main.js": "/static/js/main.f4078a8c.chunk.js",
+  "main.js.map": "/static/js/main.f4078a8c.chunk.js.map",
+  "static/js/1.efa2844c.chunk.js": "/static/js/1.efa2844c.chunk.js",
+  "static/js/1.efa2844c.chunk.js.map": "/static/js/1.efa2844c.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
   "static/media/Team.module.scss": "/static/media/tao-ding.985ec374.jpg",
@@ -11,6 +11,6 @@
   "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
   "static/css/main.d3ff8ae4.chunk.css.map": "/static/css/main.d3ff8ae4.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.3af7ea3ca4b37740eab85e3869159ec9.js": "/precache-manifest.3af7ea3ca4b37740eab85e3869159ec9.js",
+  "precache-manifest.a650b491955c21ca489f5993e7d0bc25.js": "/precache-manifest.a650b491955c21ca489f5993e7d0bc25.js",
   "service-worker.js": "/service-worker.js"
 }
