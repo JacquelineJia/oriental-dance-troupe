@@ -1,6 +1,6 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import { Link, withRouter } from "react-router-dom";
+import { NavLink, withRouter } from "react-router-dom";
 
 import style from './NavigationBar.module.scss';
 
@@ -10,40 +10,45 @@ class NavigationBar extends React.Component {
       <div className={`${style.navBar} appPaddingWrapper`}>
         <div className={`${style.body} appContentWidth`}>
           <div className={style.header}>
+            <div className={style.logoWrapper}>
+              <NavLink exact to="/">
+                <div className={`${style.logo} ${style.imageLogo}`}/>
+              </NavLink>
+            </div>
             <div className={style.name}>
-              <span className={this.props.linkIndex === 1 ? style.pageOpen : null}>
-                <a onClick={() => this.props.handleClick(1)}>
+              <span>
+                <NavLink exact to="/" activeClassName={style.pageOpen}>
                   <FormattedMessage
                     id="components.navigationBar.menu.title"
                     defaultMessage="Oriental Dance Troupe of Ottawa"
                   />
-                </a>
+                </NavLink>
               </span>
             </div>
             <div className={style.menu}>
-              <span className={this.props.linkIndex === 2 ? style.pageOpen : null}>
-                <a onClick={() => this.props.handleClick(2)}>
+              <span>
+                <NavLink to="/programs" activeClassName={style.pageOpen}>
                   <FormattedMessage
                     id="components.navigationBar.menu.programs"
                     defaultMessage="Programs"
                   />
-                </a>
+                </NavLink>
               </span>
-              <span className={this.props.linkIndex === 3 ? style.pageOpen : null}>
-                <a onClick={() => this.props.handleClick(3)}>
+              <span>
+                <NavLink to="/team" activeClassName={style.pageOpen}>
                   <FormattedMessage
                     id="components.navigationBar.menu.team"
                     defaultMessage="Our Team"
                   />
-                </a>
+                </NavLink>
               </span>
-              <span className={this.props.linkIndex === 4 ? style.pageOpen : null}>
-                <a onClick={() => this.props.handleClick(4)}>
+              <span>
+                <NavLink to="/gallery" activeClassName={style.pageOpen}>
                   <FormattedMessage
                     id="components.navigationBar.menu.gallery"
                     defaultMessage="Gallery"
                   />
-                </a>
+                </NavLink>
               </span>
             </div>
           </div>

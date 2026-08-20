@@ -5,8 +5,8 @@ import style from './Team.module.scss';
 class Team extends Component {
   render() {
     return (
-      <div className={`${style.pageContent} appContentWidth`}>
-        <span className={style.title}>
+      <div className={`${style.pageContent} appContent appContentWidth`}>
+        <span className={`title`}>
           <FormattedMessage
             id="components.team.title"
             defaultMessage="Our Team"
@@ -69,7 +69,7 @@ class Team extends Component {
               />
             </span>
           </span>
-          <span className={style.memberCard}>
+          {/* <span className={style.memberCard}>
             <span className={style.column}>
               <span className={style.column}>
                 <span className={style.name}>
@@ -96,7 +96,7 @@ class Team extends Component {
                 }}
               />
             </span>
-          </span>
+          </span> */}
         </span>
       </div>
     );

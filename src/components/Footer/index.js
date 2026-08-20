@@ -5,7 +5,7 @@ import style from './Footer.module.scss';
 class Footer extends Component {
   render() {
     const currentYear = new Date().getFullYear();
-    
+
     return (
       <div className={`${style.footer} appPaddingWrapper`}>
         <div className={`${style.body} appContentWidth`}>
@@ -18,7 +18,8 @@ class Footer extends Component {
           <span>
             <a className={style.link} 
               href="mailto:dongfangwudaotuan@gmail.com"
-              target="_blank">
+              target="_blank"
+              rel="noopener noreferrer">
               dongfangwudaotuan@gmail.com
             </a>
           </span>

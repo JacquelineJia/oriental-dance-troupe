@@ -2,53 +2,58 @@
 
 .pageContent {
   margin: 0;
-  padding-bottom: 40px;
-  padding-top: 40px;
   text-align: justify;
+}
 
-  .title {
-    display: block;
-    font-size: 32px;
-    padding-bottom: 1em;
+.videoGroup {
+  background-color: $primary-color-fadded;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 3em;
+  padding: 1em;
+
+  @media (max-width: 1023px) {
+    margin-bottom: 2.5em;
+    padding: 0.7em;
   }
 
-  .videoGroup {
-    background-color: $primary-color-fadded;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    margin-top: 1em;
-    margin-bottom: 2.5em;
-    padding: 1em;
-    @media (max-width: 767px) {
-      flex-direction: column;
-    }
+  @media (max-width: 767px) {
+    flex-direction: column;
+    margin-bottom: 1.5em;
+    padding: 0.2em;
   }
 }
 
 .videoContainer {
-  display: flex;
   flex: 1;
-  flex-direction: column;
-  height: 150px;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   margin: 1em;
   position: relative;
+  border-radius: 10px;
+
   @media (max-width: 767px) {
-    height: 240px;
+    flex: 0 1 auto;
   }
 }
 
 .videoContainer iframe {
   border-radius: 10px;
   border-width: 0px;
-  flex: 1 1 auto;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .singleVideo {
-  height: 400px;
-  max-height: 80vh;
+  flex: 0 1 800px;
+  max-width: 800px;
+
   @media (max-width: 767px) {
-    height: 350px;
+    flex: 0 1 auto;
   }
 }

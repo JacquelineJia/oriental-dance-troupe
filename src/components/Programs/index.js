@@ -5,8 +5,8 @@ import style from './Programs.module.scss';
 class Programs extends Component {
   render() {
     return (
-      <div className={`${style.pageContent} appContentWidth`}>
-        <span className={style.title}>
+      <div className={`${style.pageContent} appContent appContentWidth`}>
+        <span className={`title`}>
           <FormattedMessage
             id="components.programs.title"
             defaultMessage="Programs"

@@ -5,8 +5,8 @@ import style from './About.module.scss';
 class About extends Component {
   render() {
     return (
-      <div className={`${style.pageContent} appContentWidth`}>
-        <span className={style.title}>
+      <div className={`${style.pageContent} appContent appContentWidth`}>
+        <span className={`title`}>
           <FormattedMessage
             id="components.about.title"
             defaultMessage="About us"
