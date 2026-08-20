@@ -4,6 +4,8 @@ import style from './Footer.module.scss';
 
 class Footer extends Component {
   render() {
+    const currentYear = new Date().getFullYear();
+    
     return (
       <div className={`${style.footer} appPaddingWrapper`}>
         <div className={`${style.body} appContentWidth`}>
@@ -27,7 +29,8 @@ class Footer extends Component {
           <span className={style.copyright}>
             <FormattedMessage
               id="components.footer.copyright"
-              defaultMessage="© 2019 Oriental Dance Troupe of Ottawa"
+              defaultMessage="© {year} Oriental Dance Troupe of Ottawa"
+              values={{ year: currentYear }}
             />
           </span>
         </div>
